@@ -57,11 +57,12 @@ export const StatsList = styled.ul`
 
 export const StatsItem = styled.span`
   margin: 0;
-  padding: 16px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex-basis: 33%;
+  height: 80px;
   border: solid #b1c8dd 1px;
   background-color: #d0deeb;
 `;
