@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Transactions = styled.table`
-  width: 75%;
+  width: 600px;
   box-shadow: ${props => props.theme.shadows.third};
 `;
 
