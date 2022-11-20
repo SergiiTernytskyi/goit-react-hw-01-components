@@ -61,7 +61,8 @@ export const StatsItem = styled.span`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-basis: 33%;
+  flex-basis: calc(100% / 3);
+  gap: 4px;
   height: 80px;
   border: solid #b1c8dd 1px;
   background-color: #d0deeb;

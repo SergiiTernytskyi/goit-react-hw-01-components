@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { getStatisticsItems } from '../../utils/getStatisticItems';
+import { getStatisticsItems } from '../../utils';
 
 export const StatisticsSection = styled.section`
   width: 300px;
