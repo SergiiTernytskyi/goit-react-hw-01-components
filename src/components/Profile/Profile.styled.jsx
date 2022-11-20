@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProfileCard = styled.div`
-  margin: ${props => props.theme.space[0]}px;
+  margin-bottom: ${props => props.theme.space[6]}px;
   width: 300px;
   background-color: ${props => props.theme.colors.background};
   box-shadow: ${props => props.theme.shadows.first};
@@ -27,7 +27,6 @@ export const AvatarImage = styled.img`
 `;
 
 export const Name = styled.p`
-  margin: ${props => props.theme.space[0]};
   margin-bottom: ${props => props.theme.space[4]}px;
   font-size: ${props => props.theme.fontSizes.xl}px;
   font-weight: ${props => props.theme.fontWeights.bold};
@@ -35,21 +34,17 @@ export const Name = styled.p`
 `;
 
 export const Tag = styled.p`
-  margin: ${props => props.theme.space[0]};
   margin-bottom: ${props => props.theme.space[4]}px;
   color: ${props => props.theme.colors.primaryText};
 `;
 
 export const Location = styled.p`
-  margin: ${props => props.theme.space[0]};
   font-weight: ${props => props.theme.fontWeights.bold};
   line-height: ${props => props.theme.lineHeights.heading};
   color: ${props => props.theme.colors.primaryText};
 `;
 
 export const StatsList = styled.ul`
-  margin: ${props => props.theme.space[0]};
-  padding: ${props => props.theme.space[0]};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +52,6 @@ export const StatsList = styled.ul`
 `;
 
 export const StatsItem = styled.span`
-  margin: ${props => props.theme.space[0]};
   display: flex;
   flex-direction: column;
   justify-content: center;

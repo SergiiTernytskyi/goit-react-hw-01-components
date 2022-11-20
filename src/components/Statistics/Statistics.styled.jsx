@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import { getStatisticsItems } from '../../utils';
 
 export const StatisticsSection = styled.section`
+  margin-bottom: ${props => props.theme.space[6]}px;
   width: 300px;
   box-shadow: ${props => props.theme.shadows.first};
 `;
 
 export const Title = styled.h2`
-  margin: ${props => props.theme.space[0]};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -23,8 +23,6 @@ export const Title = styled.h2`
 `;
 
 export const StatsList = styled.ul`
-  margin: ${props => props.theme.space[0]};
-  padding: ${props => props.theme.space[0]};
   display: flex;
   align-items: center;
   justify-content: center;

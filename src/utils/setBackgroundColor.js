@@ -1,10 +1,10 @@
 export function setBackgroundColor(props) {
   switch (props.isOnline) {
     case true:
-      return '#f00';
+      return '#ff0000';
     case false:
-      return '#0f0';
+      return '#00ff00';
     default:
-      return '#000';
+      return '#ffffff';
   }
 }

@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import { setBackgroundColor } from '../../utils';
 
 export const FriendCard = styled.li`
-  padding-left: ${props => props.theme.space[5]}px;
+  padding-left: ${props => props.theme.space[4]}px;
   display: flex;
   align-items: center;
-  height: 80px;
-  background-color: ${props => props.theme.colors.white};
+  height: 90px;
+  background-color: ${setBackgroundColor}20;
   box-shadow: ${props => props.theme.shadows.first};
+  border-radius: ${props => props.theme.radii.normal};
 
   :not(:last-child) {
     margin-bottom: ${props => props.theme.space[4]}px;
@@ -15,9 +16,9 @@ export const FriendCard = styled.li`
 `;
 
 export const Status = styled.span`
-  margin-right: ${props => props.theme.space[5]}px;
-  width: 20px;
-  height: 20px;
+  margin-right: ${props => props.theme.space[4]}px;
+  width: 24px;
+  height: 24px;
   border-radius: ${props => props.theme.radii.round};
   background-color: ${setBackgroundColor};
 `;
