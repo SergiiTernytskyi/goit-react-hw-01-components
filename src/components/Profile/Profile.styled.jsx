@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ProfileCard = styled.div`
   margin: ${props => props.theme.space[0]}px;
-  margin-bottom: ${props => props.theme.space[5]}px;
   width: 300px;
   background-color: ${props => props.theme.colors.background};
   box-shadow: ${props => props.theme.shadows.first};

@@ -4,7 +4,6 @@ import { getStatisticsItems } from '../../utils';
 
 export const StatisticsSection = styled.section`
   width: 300px;
-  margin-bottom: ${props => props.theme.space[5]}px;
   box-shadow: ${props => props.theme.shadows.first};
 `;
 
