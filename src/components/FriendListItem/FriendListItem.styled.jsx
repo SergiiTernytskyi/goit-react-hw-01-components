@@ -5,9 +5,7 @@ export const FriendCard = styled.li`
   padding-left: ${props => props.theme.space[5]}px;
   display: flex;
   align-items: center;
-  width: 300px;
   height: 80px;
-
   background-color: ${props => props.theme.colors.white};
   box-shadow: ${props => props.theme.shadows.first};
 
