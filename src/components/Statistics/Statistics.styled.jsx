@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
+import { getStatisticsItems } from '../../utils/getStatisticItems';
+
 export const StatisticsSection = styled.section`
   width: 300px;
 `;
 
 export const Title = styled.h2`
+  margin: 0;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -31,15 +34,17 @@ export const StatsItem = styled.li`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-basis: calc(100% / 5);
+  flex-basis: calc(100% / ${getStatisticsItems()});
+  height: 68px;
 
   color: #fff;
 `;
 
 export const Label = styled.span`
-  font-size: 18px;
+  font-size: 16px;
 `;
 
 export const Percentage = styled.span`
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: 700;
 `;

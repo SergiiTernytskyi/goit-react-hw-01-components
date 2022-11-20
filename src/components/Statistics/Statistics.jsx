@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { getRandomColor } from '../../utils/getRandomColor';
 
 import {
   StatisticsSection,
@@ -17,7 +18,12 @@ export const Statistics = ({ title, stats }) => {
       <StatsList>
         {stats.map(item => {
           return (
-            <StatsItem key={item.id}>
+            <StatsItem
+              key={item.id}
+              style={{
+                backgroundColor: getRandomColor(),
+              }}
+            >
               <Label>{item.label}</Label>
               <Percentage>{item.percentage}%</Percentage>
             </StatsItem>
@@ -29,7 +35,7 @@ export const Statistics = ({ title, stats }) => {
 };
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,
