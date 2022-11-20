@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const ProfileCard = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+
   margin-bottom: ${props => props.theme.space[6]}px;
   width: 300px;
   background-color: ${props => props.theme.colors.background};

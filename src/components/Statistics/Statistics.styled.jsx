@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import { getStatisticsItems } from '../../utils';
 
 export const StatisticsSection = styled.section`
+  margin-left: auto;
+  margin-right: auto;
+
   margin-bottom: ${props => props.theme.space[6]}px;
   width: 300px;
   box-shadow: ${props => props.theme.shadows.first};

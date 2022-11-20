@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const Transactions = styled.table`
+  margin-left: auto;
+  margin-right: auto;
+
   width: 600px;
   box-shadow: ${props => props.theme.shadows.third};
 `;
