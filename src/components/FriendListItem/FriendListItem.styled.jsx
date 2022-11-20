@@ -2,37 +2,37 @@ import styled from 'styled-components';
 import { setBackgroundColor } from '../../utils';
 
 export const FriendCard = styled.li`
-  padding-left: 16px;
+  padding-left: ${props => props.theme.space[5]}px;
   display: flex;
   align-items: center;
   width: 300px;
   height: 80px;
 
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: ${props => props.theme.colors.white};
+  box-shadow: ${props => props.theme.shadows.first};
 
   :not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: ${props => props.theme.space[4]}px;
   }
 `;
 
 export const Status = styled.span`
-  margin-right: 20px;
+  margin-right: ${props => props.theme.space[5]}px;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: ${props => props.theme.radii.round};
   background-color: ${setBackgroundColor};
 `;
 
 export const FriendImage = styled.img`
-  margin-right: 20px;
+  margin-right: ${props => props.theme.space[5]}px;
   width: 60px;
   height: auto;
-  border-radius: 12px;
+  border-radius: ${props => props.theme.radii.round};
   overflow: hidden;
 `;
 
 export const Name = styled.p`
-  font-size: 20px;
-  font-weight: 700;
+  font-size: ${props => props.theme.fontSizes.l}px;
+  font-weight: ${props => props.theme.fontWeights.bold};
 `;

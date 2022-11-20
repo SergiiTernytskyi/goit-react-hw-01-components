@@ -7,22 +7,23 @@ export const StatisticsSection = styled.section`
 `;
 
 export const Title = styled.h2`
-  margin: 0;
+  margin: ${props => props.theme.space[0]};
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  font-size: 24px;
-  font-weight: 500;
   text-transform: uppercase;
-  color: #728697;
-  background-color: #fff;
+  font-size: ${props => props.theme.fontSizes.xl}px;
+  font-weight: ${props => props.theme.fontWeights.semibold};
+  line-height: ${props => props.theme.lineHeights.heading};
+  color: ${props => props.theme.colors.primaryText};
+  background-color: ${props => props.theme.colors.white};
 `;
 
 export const StatsList = styled.ul`
-  margin: 0;
-  padding: 0;
+  margin: ${props => props.theme.space[0]};
+  padding: ${props => props.theme.space[0]};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,17 +35,20 @@ export const StatsItem = styled.li`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-basis: calc(100% / ${getStatisticsItems()});
+  flex-basis: calc(100% / ${getStatisticsItems});
   height: 68px;
 
-  color: #fff;
+  color: ${props => props.theme.colors.white};
 `;
 
 export const Label = styled.span`
-  font-size: 16px;
+  font-size: ${props => props.theme.fontSizes.m}px;
+  font-weight: ${props => props.theme.fontWeights.normal};
+  line-height: ${props => props.theme.lineHeights.body};
 `;
 
 export const Percentage = styled.span`
-  font-size: 18px;
-  font-weight: 700;
+  font-size: ${props => props.theme.fontSizes.l}px;
+  font-weight: ${props => props.theme.fontWeights.bold};
+  line-height: ${props => props.theme.lineHeights.body};
 `;

@@ -5,7 +5,7 @@ import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 
 export const FriendsList = ({ friends }) => {
   return (
-    <FriendsBoard className="friend-list">
+    <FriendsBoard>
       {friends.map(friend => {
         return (
           <FriendListItem
