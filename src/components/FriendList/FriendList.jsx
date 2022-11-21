@@ -6,13 +6,13 @@ import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 export const FriendsList = ({ friends }) => {
   return (
     <FriendsBoard>
-      {friends.map(friend => {
+      {friends.map(({ id, avatar, name, isOnline }) => {
         return (
           <FriendListItem
-            key={friend.id}
-            avatar={friend.avatar}
-            name={friend.name}
-            isOnline={friend.isOnline}
+            key={id}
+            avatar={avatar}
+            name={name}
+            isOnline={isOnline}
           />
         );
       })}

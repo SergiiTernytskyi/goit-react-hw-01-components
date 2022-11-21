@@ -16,16 +16,16 @@ export const Statistics = ({ title, stats }) => {
       {title && <Title>{title}</Title>}
 
       <StatsList>
-        {stats.map(item => {
+        {stats.map(({ id, label, percentage }) => {
           return (
             <StatsItem
-              key={item.id}
+              key={id}
               style={{
                 backgroundColor: getRandomColor(),
               }}
             >
-              <Label>{item.label}</Label>
-              <Percentage>{item.percentage}%</Percentage>
+              <Label>{label}</Label>
+              <Percentage>{percentage}%</Percentage>
             </StatsItem>
           );
         })}
