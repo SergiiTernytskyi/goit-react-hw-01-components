@@ -1,7 +1,7 @@
-import user from '../../resourses/user.json';
-import data from '../../resourses/data.json';
-import friends from '../../resourses/friends.json';
-import transactions from '../../resourses/transactions.json';
+import user from 'resourses/user.json';
+import data from 'resourses/data.json';
+import friends from 'resourses/friends.json';
+import transactions from 'resourses/transactions.json';
 
 import { Container } from './App.styled';
 import { Profile } from 'components/Profile/Profile';
