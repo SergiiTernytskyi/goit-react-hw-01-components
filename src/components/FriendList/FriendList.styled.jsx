@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FriendsBoard = styled.ul`
+export const List = styled.ul`
   margin-left: auto;
   margin-right: auto;
 
@@ -8,3 +8,7 @@ export const FriendsBoard = styled.ul`
   list-style: none;
   width: 300px;
 `;
+
+export const FriendsBoard = styled.li`
+ :not(:last-child) {
+    margin-bottom: ${props => props.theme.space[4]}px;`;

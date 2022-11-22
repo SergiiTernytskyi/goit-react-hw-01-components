@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { setBackgroundColor } from '../../utils';
 
-export const FriendCard = styled.li`
+export const FriendCard = styled.div`
   padding-left: ${props => props.theme.space[4]}px;
   display: flex;
   align-items: center;
@@ -9,9 +9,6 @@ export const FriendCard = styled.li`
   background-color: ${setBackgroundColor}20;
   box-shadow: ${props => props.theme.shadows.first};
   border-radius: ${props => props.theme.radii.normal};
-
-  :not(:last-child) {
-    margin-bottom: ${props => props.theme.space[4]}px;
   }
 `;
 
